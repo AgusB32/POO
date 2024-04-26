@@ -6,20 +6,19 @@ import java.util.Iterator;
 
 public class ej5_sueldo {
         public static void main(String[] args) {
-    
             
             var empleados = new HashSet<ej5_empleado>();
             
-            var ee = new ej5_empleado("Juan", 50000);
+            var ee = new ej5_empleado("Santiago", 60000);
             
             empleados.add(ee);
-            empleados.add(new ej5_empleado("Maria", 100000));
-            empleados.add(new ej5_empleado("Felipe", 80000));
+            empleados.add(new ej5_empleado("Martin", 130000));
+            empleados.add(new ej5_empleado("Lucas", 800000));
             empleados.add(ee);
-            empleados.add(new ej5_empleado("Matias", 70000));
-            empleados.add(new ej5_empleado("Sol", 90000));
+            empleados.add(new ej5_empleado("Valentina", 700000));
+            empleados.add(new ej5_empleado("Sofia", 1000000));
             empleados.add(ee);
-            empleados.add(new ej5_empleado("Pepe", 90000));
+            empleados.add(new ej5_empleado("Martina", 3000000));
             empleados.add(ee);
             
             Integer total = 0;

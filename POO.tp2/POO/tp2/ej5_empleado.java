@@ -39,7 +39,7 @@ public class ej5_empleado {
 
 	@Override
 	public String toString() {
-		return "El empleado se llamma: " + this.getNombre() +
+		return "El empleado se llama: " + this.getNombre() +
 				" y tiene el siguiente sueldo: $" + this.getSueldo();
 	}
 

@@ -1,60 +1,34 @@
-package POO.tp2;
+package POO.tp2; 
+
+import java.util.Scanner;
 
 public class ej6 {
-    private Integer numero;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    // Constructor de la clase Enteros
-    public ej6(Integer numero) {
-        this.numero = numero;
-    }
+        System.out.println("Ingrese un número entero:");
+        int num = scanner.nextInt();
 
-    // Método para obtener el número
-    public Integer getNumero() {
-        return numero;
-    }
+        ej6cuentas e = new ej6cuentas(num);
 
-    // Método para establecer el número
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
+        System.out.println("El número ingresado es: " + e.getNumero());
 
-    // Calcula el cuadrado del número
-    public Long cuadrado() {
-        return (long) numero * numero;
-    }
+        System.out.println("El cuadrado de " + e.getNumero() + " es: " + e.cuadrado());
 
-    // Verifica si el número es par
-    public boolean esPar() {
-        return numero % 2 == 0;
-    }
-
-    // Verifica si el número es impar
-    public boolean esImpar() {
-        return !esPar();
-    }
-
-    // Calcula el factorial del número
-    public Long factorial() {
-        if (numero < 0) {
-            throw new IllegalArgumentException("El factorial no está definido para números negativos.");
+        if (e.esPar()) {
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
         }
-        long factorial = 1;
-        for (int i = 1; i <= numero; i++) {
-            factorial *= i;
-        }
-        return factorial;
-    }
 
-    // Verifica si el número es primo
-    public boolean esPrimo() {
-        if (numero <= 1) {
-            return false;
+        System.out.println("El factorial de " + e.getNumero() + " es: " + e.factorial());
+
+        if (e.esPrimo()) {
+            System.out.println("El número es primo");
+        } else {
+            System.out.println("El número no es primo");
         }
-        for (int i = 2; i * i <= numero; i++) {
-            if (numero % i == 0) {
-                return false;
-            }
-        }
-        return true;
+
+        scanner.close();
     }
 }

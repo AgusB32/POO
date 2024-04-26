@@ -3,7 +3,6 @@ package POO.tp2;
 import java.util.HashSet;
 import java.util.Iterator;
 
-
 public class ej5_sueldo {
         public static void main(String[] args) {
             

@@ -1,4 +1,4 @@
-package POO.tp2;
+package POO_tp2;
 
 public class ej6cuentas {
     private Integer numero;

@@ -1,4 +1,4 @@
-package POO.tp2;
+package POO_tp2;
 
 import java.util.HashSet;
 import java.util.Iterator;
